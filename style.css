@@ -6,47 +6,62 @@ body {
   padding: 0;
   background-color: ghostwhite;
 }
-.calarea, .btnarea {
-  width: 50%;
-  margin: 30px auto -10px;
+.calculator {
+  padding-top: 1rem;
+  width:50%;
+  margin: 0 auto;
 }
 
+.btnarea {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.btnarea>div {
+  margin: 0.25rem auto 0;
+}
 .box {
-  width: 99%;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
   border: 2px solid black;
   border-radius: 5px;
-  font-size: 3em;
+  font-size: 1rem;
+  padding: 0.2rem;
 }
 
 button {
-  display: block;
-  float: left;
-  padding: 5px 0;
-  width: 24%;
-  margin-top: 1%;
-  margin-right: 1%;
+  margin-right: 0.1rem !important;
+  height: 1rem;
+  width: 1.5rem;
   background-color: lightblue;
   border: 1px solid gray;
-  border-radius: 5px;
-  font-size: 1.5em;
+  border-radius: 0.2rem;
+  font-size: 0.6rem;
 }
 
 .zero, .dot {
-  width:36.5%;
+  width: 2.3rem;
 }
 .equal {
-  float: right;
+  width: 1.5rem;
+  height: 2.25rem;
 }
+
 @media screen and (max-width: 768px) {
-  .calarea, .btnarea {
+  .calculator {
     width: 90%;
+  }
+  .box {
+    width: 100%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .calarea, .btnarea {
+  .calculator {
     width: 60%;
+  }
+  .box {
+  width: 100%;
   }
 }
 
 
-  
