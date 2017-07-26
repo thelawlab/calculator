@@ -36,7 +36,6 @@ button {
 }
 .equal {
   float: right;
-  line-height: 2.5rem;
 }
 @media screen and (max-width: 768px) {
   .calarea, .btnarea {
