@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: ghostwhite;
+}
+.calarea, .btnarea {
+  width: 50%;
+  margin: 30px auto -10px;
+}
+
+.box {
+  width: 99%;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 3em;
+}
+
+button {
+  display: block;
+  float: left;
+  padding: 5px 0;
+  width: 24%;
+  margin-top: 1%;
+  margin-right: 1%;
+  background-color: lightblue;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+
+.zero, .dot {
+  width:36.5%;
+}
+.equal {
+  float: right;
+  line-height: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .calarea, .btnarea {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .calarea, .btnarea {
+    width: 60%;
+  }
+}
+
+
+  
