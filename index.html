@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
   <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Calculator</title>
 </head>
 <body>
@@ -14,42 +14,42 @@
     </div>
     <div class="btnarea">
       <div>
-        <button>mc</button>
-        <button>m+</button>
-        <button>m-</button>
-        <button>mr</button>
+        <button class="operator mop">mc</button>
+        <button class="operator mop">m+</button>
+        <button class="operator mop">m-</button>
+        <button class="operator mop">mr</button>
       </div>
       <div>
-        <button>AC</button>
-        <button>&plusmn;</button>
-        <button>&div;</button>
-        <button>&times;</button>
+        <button class="operator">AC</button>
+        <button class="operator">&plusmn;</button>
+        <button class="operator">&div;</button>
+        <button class="operator">&times;</button>
       </div>
       <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>&minus;</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">&minus;</button>
       </div>
       <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">+</button>
       </div>
       <div style="display: inline-block;vertical-align: top">
         <div>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
+          <button class="number">1</button>
+          <button class="number">2</button>
+          <button class="number">3</button>
         </div>
         <div style="margin-top: 0.25rem">
-          <button class="zero">0</button>
-          <button class="dot">.</button>
+          <button class="zero number">0</button>
+          <button class="dot number">.</button>
         </div>
       </div>
       <div style="display: inline-block">
-          <button class="equal">=</button>
+          <button class="equal operator">=</button>
       </div>
     </div>
   </div>
