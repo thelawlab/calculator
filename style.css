@@ -22,8 +22,8 @@ html, body {
   display: block;
   width: 70%;
   margin: 0 auto;
-  border: 2px solid #6c606a;
-  border-radius: 5px;
+  border: 5px solid #6c606a;
+  border-radius: 7px;
   font-size: 1rem;
   padding: 0.2rem;
   text-align: right;
@@ -35,35 +35,48 @@ button {
   margin-right: 0.1rem;
   height: 1rem;
   width: 1.5rem;
-  background-color: lightblue;
   border: 1px solid gray;
   border-radius: 0.2rem;
   font-size: 0.5rem;
-  box-shadow: 0px 1px 2px #888888;
-}
-button:hover {
+  box-shadow: 1px 2px 2px rgb(79, 73, 77);
   cursor: pointer;
+}
+button:active {
+  box-shadow: 0px 0px 0px rgb(79, 73, 77);
 }
 .zero, .dot {
   width: 2.3rem;
 }
 .operator {
-  background-color: #6c606a;
+  background-color: rgba(108, 96, 106, 0.8);
   color: white;
 }
+.operator:hover, .operator:active {
+  background-color: rgb(108, 96, 106);
+}
 .mop {
-  background-color: #40393d;
+  background-color: rgba(64, 57, 61, 0.8);
+  color: white;
+}
+.mop:hover, .mop:active {
+  background-color: rgb(64, 57, 61);
 }
 .number {
-  background-color: ghostwhite;
+  background-color: rgb(248, 248, 255);
   color: #373538;
 }
-.equal {
+.number:hover, .number:active {
+  background-color: rgb(235, 232, 244);
+}
+#equal {
   width: 1.5rem;
   height: 2.25rem;
-  background-color: #FF7F50;
+  background-color: rgba(255, 140, 76, 0.9);
+  color: white;
 }
-
+#equal:hover {
+  background-color: rgb(255, 127, 80);
+}
 
 @media screen and (max-width: 768px) {
   .calculator {
