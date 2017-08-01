@@ -8,7 +8,7 @@ html, body {
 }
 .calculator {
   padding-top: 1rem;
-  width:50%;
+  width:55%;
   margin: 0 auto;
 }
 .btnarea {
@@ -27,7 +27,6 @@ html, body {
   font-size: 1rem;
   padding: 0.2rem;
   text-align: right;
-  direction: rtl;
   background-color: #FCF4E8;
 }
 

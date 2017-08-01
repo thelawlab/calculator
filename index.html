@@ -10,32 +10,32 @@
 <body>
   <div class="calculator">
     <div class="calarea">
-      <input type="text" name="textfield" readonly="readonly" class="box" value="">
+      <input type="text" name="textfield" readonly="readonly" class="box" value="0">
     </div>
     <div class="btnarea">
       <div>
-        <button class="mop" type="button" value="">mc</button>
-        <button class="mop" type="button" value="">m+</button>
-        <button class="mop" type="button" value="">m-</button>
-        <button class="mop" type="button" value="">mr</button>
+        <button class="mop" type="button" value="" id="clearmemory">mc</button>
+        <button class="mop" type="button" value="" id="addmemory">m+</button>
+        <button class="mop" type="button" value="" id="minusmemory">m-</button>
+        <button class="mop" type="button" value="" id="recallmemory">mr</button>
       </div>
       <div> 
-        <button class="operator" type="button" value="">AC</button>
-        <button class="operator" type="button" value="">&plusmn;</button>
-        <button class="operator" type="button" value="">&div;</button>
-        <button class="operator" type="button" value="">&times;</button>
+        <button class="operator" type="button" id="clear">AC</button>
+        <button class="operator" type="button" value="pn" id="pn">&plusmn;</button>
+        <button class="operator opsign" type="button" value="divide">&div;</button>
+        <button class="operator opsign" type="button" value="times">&times;</button>
       </div>
       <div>
         <button class="number" type="button" value="7">7</button>
-        <button class="number" type="button" value="9">8</button>
+        <button class="number" type="button" value="8">8</button>
         <button class="number" type="button" value="9">9</button>
-        <button class="operator" type="button" value="">&minus;</button>
+        <button class="operator opsign" type="button" value="minus">&minus;</button>
       </div>
       <div>
         <button class="number" type="button" value="4">4</button>
         <button class="number" type="button" value="5">5</button>
         <button class="number" type="button" value="6">6</button>
-        <button class="operator" >+</button>
+        <button class="operator opsign" type="button" value="add">&plus;</button>
       </div>
       <div style="display: inline-block;vertical-align: top">
         <div>
@@ -45,11 +45,11 @@
         </div>
         <div style="margin-top: 0.25rem">
           <button class="zero number" type="button" value="0">0</button>
-          <button class="dot number" type="button" value="">.</button>
+          <button class="dot number" type="button" value=".">.</button>
         </div>
       </div>
       <div style="display: inline-block">
-          <button id="equal" type="button" value="">=</button>
+          <button id="equal" type="button" value="equal">=</button>
       </div>
     </div>
   </div>
