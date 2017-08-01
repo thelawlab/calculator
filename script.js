@@ -24,7 +24,7 @@ for(var i = 0 ; i < numberbtns.length; i++) {
 }
 function operand(e) {
     if (clearbtn.innerHTML === "C") {
-        if (text.indexOf("-") !== -1){
+        if (text === "-0"){
             text = "-0";
         } else {
             text = "0";  
@@ -119,6 +119,10 @@ equalbtn.addEventListener("click", ans);
 function ans() {
     if (operator === "") {
         clearbtn.innerHTML = "C";
+        if( text=== "-0" || text ==="-0.") {
+            text = "0";
+            calarea.setAttribute("value", text)
+        }
         return;
     } else if (!equalsign) {
         store[1] = Number(text);
@@ -155,23 +159,33 @@ function cal() {
         default:
             return;
     }
-    store[0] = round(store[0], 16)
+    store[0] = round(store[0])
     result = store[0];
     text = String(result);
     calarea.setAttribute("value", text);
 }
 
-function round(result, n) {
-    var t = 1;
-    for(; n > 0; t *= 10, n--);
-    for(; n < 0; t /= 10, n++);
-    return Math.round(result*t)/t;
+function round(num) {
+    var finalnum;
+    var numstr = String(num);
+    s = numstr.split(".");
+    if (s.length === 1){
+        return num;
+    } else {
+        var n = 15 - s[0].length;
+        var t = 1;
+        for(; n > 0;){
+            t *= 10;
+            n--;
+        }
+        return finalnum = Math.round(num*t)/t;
+    }
 }
 
 
 pnswitch.addEventListener("click", switchpn);
 function switchpn() {
-    if (!resultstatus) {
+    if (!resultstatus && operator !== "") {
         text = "-0";
     } else if ( text.indexOf("-") === -1) {
         text = "-" + text;
